@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Time</title>
+
+    <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js"></script>
+</head>
+<body>
+
+    <div id="container">
+        <header>
+            <h1>Simle Covid-19 Quiz</h1>
+            <p>Test your knowledge about <strong>Covid-19</strong></p>
+        </header>
+
+        <section>
+            <div id="result">
+
+            </div>
+
+            <form id="quiz" name="quizForm" onsubmit="return submitAnswers()">
+                <h3>1. What does COVID-19 stand for?</h3>
+                <input type="radio" name="q1" value="a" id="q1a">a. It's a term for Coronavirus Disease 19, because it's the 19th strain of coronavirus discovered.<br>
+                <input type="radio" name="q1" value="b" id="q1b">b. It's a term that stands for Coronavirus Disease 2019, the year it was first identified.<br> 
+                <input type="radio" name="q1" value="c" id="q1c">c. Both of the above.<br>
+                <input type="radio" name="q1" value="d" id="q1d">d. None of the above.<br> 
+               
+                <h3>2. What other viruses belong to the coronavirus family?</h3>
+                <input type="radio" name="q2" value="a" id="q2a">a. SARS and influenza.<br>
+                <input type="radio" name="q2" value="b" id="q2b">b. SARS and MERS.<br> 
+                <input type="radio" name="q2" value="c" id="q2c">c. SARS and HIV.<br>
+               
+                <h3>3. A vaccine stimulates your immune system to produce antibodies, like it would if you were exposed to the virus.</h3>
+                <input type="radio" name="q3" value="a" id="q3a">a. True.<br>
+                <input type="radio" name="q3" value="b" id="q3b">b. False.<br> 
+
+                <h3>4. There are currently vaccines for the following coronaviruses:</h3>
+                <input type="radio" name="q4" value="a" id="q4a">a. SARS.<br>
+                <input type="radio" name="q4" value="b" id="q4b">b. MERS.;<br> 
+                <input type="radio" name="q4" value="c" id="q4c">c. SARS and MERS.<br>
+                <input type="radio" name="q4" value="d" id="q4d">d. None of the above;<br> 
+
+                <h3>5. The virus is mutating rapidly.</h3>
+                <input type="radio" name="q5" value="a" id="q5a">a. True.<br>
+                <input type="radio" name="q5" value="b" id="q5b">b. False.<br>
+
+                <br><br>
+                <input class="btn" type="submit" value="submit Answers">  
+            </form>
+        </section>
+
+        <footer>
+            <p>Copyright &copy;2021 All rights reserved</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
